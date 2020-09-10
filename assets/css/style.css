@@ -1,0 +1,12 @@
+.header {
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+}
+.app-title {
+    font-size: 3rem;
+    color: white;
+    justify-content: center;
+    display: inline-block;  
+  }
+  
