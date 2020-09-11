@@ -2,6 +2,7 @@
     background-color: lightblue;
     color: black;
     text-align: center;
+    padding: 3% 4%;
 }
 .app-title {
     font-size: 3rem;
@@ -9,4 +10,32 @@
     justify-content: center;
     display: inline-block;  
   }
+
+  .card {
+    margin: 0 0 20px 0;
+    border: 4px solid black;
+  }
   
+  
+.card-body {
+    padding: 1%;
+  }
+  
+
+.form-input {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+
+body.sunny {
+    background-image: linear-gradient(to right top, #ff4e50, #ff713e, #ff932b, #ffb41d, #f9d423);
+}
+
+body.cloudy {
+    background-image: linear-gradient(to right top, #63747c, #71858e, #7f96a0, #8da8b2, #9bbac5);
+}
+
+body.rainy {
+    background-image: linear-gradient(to right top, #637c7b, #718e8c, #7ea09e, #8db2b0, #9bc5c3);
+}

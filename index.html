@@ -5,39 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css"/>
     <title>Weather Forecast</title>
 </head>
 
-<body class="flex-column min-100-vh">
+<body>
     <header class="header">
       <h1 class="app-title"><i class="fas fa-cloud"></i> Weather Forecast</h1>
     </header>
 
-    <main class="flex-row justify-space-between">
-        <div class="col-8 col-md-4">
-          <div class="card">
-            <h3 class="card-header">Search for a City:</h3>
-              <form id="city" class="card-body">
-              <input name="city" id="city" type="text" autofocus="true" class="form-input"/>
-              <button type="submit" class="btn"><i class="fas fa-search"></i></button>
+    <main>
+        <div class="col-4 col-md-2">
+            <div class="card">
+              <h2>Search for a City:</h2>
+              <form id="user-input" class="card-body">
+                <input name="cityname"type="text" aut ofocus="true" class="form-input"/>
+                <button type="submit" class="btn"><i class="fas fa-search"></i></button>
               </form>
             </div>
-            <div class="card">
-                <h3 class="card-header"></h3>
-                <div class="card-body" id="history-search">
-                </div>
+            <div>
+              <div id="searched-cities"></div>
             </div>
+          </div>
+        
+        <div>
+        <div>
+            <div id="weather"></div>
+            <div id="location"></div>
+            <h1 id="temp"></h1>
+            <div id="description"></div>
         </div>
-        <div class="col-12 col-md-8">
-            <h2></h2>
-            <div id="city-searched" class="weather-info"></div>
-            <div id="5-day-forecast"></div>
+        <div id="5dayforecast">
         </div> 
-    </main>
-
+        </div>      
+   
+</main>
     <script src="./assets/js/javascript.js"></script>
+    
 </body>
 </html>
