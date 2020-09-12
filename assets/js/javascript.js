@@ -48,3 +48,17 @@ var apiKey = 'ef81a5dadc206fb285c8563fe1675b51';
 
 }
 fiveDayForecast()
+
+var display5DayForecast = function() {
+    document.getElementById('description5day').innerHTML = degrees.weather[0].description;
+    document.getElementById('temp5day').innerHTML = fahrenheit + '&deg;';
+	document.getElementById('location5day').innerHTML = degrees.name;
+
+    if( description.indexOf('rain') > 0 ) {
+        document.body.className = 'rainy';
+    } else if( description.indexOf('cloud') > 0 ) {
+        document.body.className = 'cloudy';
+    } else if( description.indexOf('sunny') > 0 ) {
+        document.body.className = 'sunny';
+    }
+}

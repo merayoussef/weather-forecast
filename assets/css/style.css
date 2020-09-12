@@ -13,7 +13,7 @@
 
   .card {
     margin: 0 0 20px 0;
-    border: 4px solid black;
+    border: 4px solid grey;
   }
   
   
@@ -26,7 +26,6 @@
     width: 100%;
     font-size: 1.2rem;
 }
-
 
 body.sunny {
     background-image: linear-gradient(to right top, #ff4e50, #ff713e, #ff932b, #ffb41d, #f9d423);

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.css"/>
     <title>Weather Forecast</title>
 </head>
@@ -16,7 +17,7 @@
     </header>
 
     <main>
-        <div class="col-4 col-md-2">
+        <div class="col-3 col-md-3">
             <div class="card">
               <h2>Search for a City:</h2>
               <form id="user-input" class="card-body">
@@ -30,13 +31,16 @@
           </div>
         
         <div>
-        <div>
+        <div class="col-12 col-md-8 card">
             <div id="weather"></div>
             <div id="location"></div>
             <h1 id="temp"></h1>
             <div id="description"></div>
         </div>
         <div id="5dayforecast">
+            <div id="location5day"></div>
+            <h1 id="temp5day"></h1>
+            <div id="description5day"></div>
         </div> 
         </div>      
    
