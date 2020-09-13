@@ -13,7 +13,7 @@
 
   .card {
     margin: 0 0 20px 0;
-    border: 4px solid grey;
+    border: 2px solid grey;
   }
   
   
@@ -21,6 +21,9 @@
     padding: 1%;
   }
   
+.developer {
+    border: 1px solid red;
+}
 
 .form-input {
     width: 100%;
@@ -31,10 +34,10 @@ body.sunny {
     background-image: linear-gradient(to right top, #ff4e50, #ff713e, #ff932b, #ffb41d, #f9d423);
 }
 
-body.cloudy {
+.cloudy {
     background-image: linear-gradient(to right top, #63747c, #71858e, #7f96a0, #8da8b2, #9bbac5);
 }
 
-body.rainy {
+.rainy {
     background-image: linear-gradient(to right top, #637c7b, #718e8c, #7ea09e, #8db2b0, #9bc5c3);
 }
