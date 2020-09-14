@@ -1,7 +1,9 @@
 function getSearchInput() {
     var inputCity = document.getElementById("form-input").value
     //here the function is called after the value is determined
-    getCityInput(inputCity)
+    getCityInput(inputCity);
+    uvIndexInfo();
+    fiveDayForecast(inputCity)
     }
   
 var getCityInput = function (inputCity) {
@@ -44,7 +46,7 @@ var uvIndexInfo = function () {
             // catch any errors
         })
 }
-uvIndexInfo()
+
 
 var uvIndex = function (index) {
     document.getElementById('uv-index').innerHTML = "UV Index: " + index.value;
@@ -52,9 +54,9 @@ var uvIndex = function (index) {
 
 
 
-var fiveDayForecast = function () {
+var fiveDayForecast = function (inputCity) {
     var apiKey = 'ef81a5dadc206fb285c8563fe1675b51';
-    fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + "Nashville" + '&appid=' + apiKey)
+    fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + inputCity + '&appid=' + apiKey)
         .then(function (response) {
             return response.json()
         })
@@ -66,7 +68,7 @@ var fiveDayForecast = function () {
         })
 
 }
-fiveDayForecast()
+
 
 var display5DayForecast = function (data) {
     var fahrenheit = Math.round(((parseFloat(data.list[0].main.temp) - 273.15) * 1.8) + 32)
@@ -98,4 +100,7 @@ var display5DayForecast = function (data) {
     document.getElementById('five-day-hum-5').innerHTML = "Humidity: " + data.list[31].main.humidity + "%";
 }
 
-document.querySelector("#btn").addEventListener("click", getSearchInput);
+document.querySelector("button").addEventListener("click", getSearchInput);
+
+localStorage.setItem("searchedcities", "form-input")
+document.getElementById("searchedcities").innerHTML = localStorage.getItem("form-input")
