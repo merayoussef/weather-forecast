@@ -8,3 +8,6 @@ https://github.com/merayoussef/weather-forecast.git
 https://merayoussef.github.io/weather-forecast/
 
 ## Project Updates:
+![picture](./assets/images/search-&-CurrentDayWeather.PNG)
+![picture](./assets/images/pull-api-info.PNG)
+![picture](./assets/images/all-info.PNG)
