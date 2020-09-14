@@ -1,7 +1,8 @@
-var inputCity = document.querySelector("form-input");
-
+var inputCity = document.querySelector(".form-input");
 
 var getCityInput = function (cityName) {
+ 
+
     var apiKey = 'ef81a5dadc206fb285c8563fe1675b51';
     fetch('https://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=' + apiKey)
         .then(function (response) {
@@ -13,7 +14,7 @@ var getCityInput = function (cityName) {
         .catch(function () {
             // catch any errors
         })
-
+  
 }
 
 getCityInput("Nashville");
@@ -53,7 +54,7 @@ var uvIndex = function (index) {
 
 var fiveDayForecast = function () {
     var apiKey = 'ef81a5dadc206fb285c8563fe1675b51';
-    fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + 'Nashville' + '&appid=' + apiKey)
+    fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + "Nashville" + '&appid=' + apiKey)
         .then(function (response) {
             return response.json()
         })
@@ -97,12 +98,5 @@ var display5DayForecast = function (data) {
     document.getElementById('five-day-hum-5').innerHTML = "Humidity: " + data.list[31].main.humidity + "%";
 }
 
-var searchedCity = function () {
-    console.log(value)
-    document.getElementById("btn").addEventListener ("submit", getCityInput);
-    var value = inputCity.value
-
-    localStorage.setItem(value)
-
-}
+document.getElementById("btn").addEventListener ("submit", getCityInput);
 
