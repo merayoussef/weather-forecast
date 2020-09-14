@@ -20,10 +20,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-3">
-                    <div class="card">
+                    <div class="card-search">
                         <h2>Search for a City:</h2>
                         <form id="user-input" class="card-body">
-                            <input name="cityname" type="text" aut ofocus="true" class="form-input" />
+                            <input name="cityname" type="text" autofocus="true" class="form-input" />
                             <button type="submit" class="btn"><i class="fas fa-search"></i></button>
                         </form>
                     </div>
@@ -36,8 +36,8 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <div id="weather"></div>
                                 <h2 id="location"></h2>
+                                <h2 id="date"></h2>
                                 <div id="temp"></div>
                                 <div id="humidity"></div>
                                 <div id="wind"></div>
@@ -87,6 +87,7 @@
         </div>
 
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.28.0/moment.min.js" integrity="sha512-Q1f3TS3vSt1jQ8AwP2OuenztnLU6LwxgyyYOG1jgMW/cbEMHps/3wjvnl1P3WTrF3chJUWEoxDUEjMxDV8pujg==" crossorigin="anonymous"></script>
     <script src="./assets/js/javascript.js"></script>
 
 </body>

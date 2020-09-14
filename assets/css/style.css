@@ -16,24 +16,34 @@ main {
 }
 
 .card {
-    margin: 0 0 20px 0;
     border: 2px solid grey;
+    padding: 50px;
+    margin-bottom: 20px;
 }
   
 .card-row {
-    border: 3px solid grey;
-    margin: 14px;
+    border: 2px solid grey;
+    margin: 10.5px;
     background-color: lightblue;
-    border-radius: .25rem;
-    
+    border-radius: .25rem;  
+}
 
+.card-search {
+    border: 2px solid grey;
+    border-radius: .25rem;
+    padding: 20px;
 }
-  
-.card-body {
-    padding: 1%;
-}
-  
+
 .form-input {
     width: 100%;
     font-size: 1.2rem;
+}
+
+.container {
+    width: 100%;
+}
+
+.col-2 {
+    font-size: 18px;
+    padding: -10px 50px;
 }
